@@ -1,0 +1,37 @@
+body {
+	text-align: center;
+}
+
+div.ikBlock#name {
+	border: 2px dotted black;
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+	clear: both;
+	margin-bottom: 3px;
+}
+
+div.ikBlock#image {
+	clear: left;
+	float: left;
+	border: 1px solid black;
+	padding: 1px;
+	margin-right: 2px;
+}
+
+div.ikBlock#description {
+	clear: right;
+	text-align: justify;
+}
+
+#attack_base, #defense_base, #armor_base, #hull_base, #weaponslots, 
+#weaponsperslot, #weaponsload_base, #size_base, #speed_base, #cargo_base, 
+#accuracy_base, #areadamage_base, #rateoffire_base, #power_base, #damage_base {
+	text-align: right;
+	display: table-row;
+}
+
+span.ikTitle {
+	font-weight: bold;
+	display: table-cell;
+}

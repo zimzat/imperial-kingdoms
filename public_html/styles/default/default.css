@@ -1,0 +1,154 @@
+
+body {
+	background-image: url('./images/background.png');
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Font specifics should be applied to body & table, as tables tend to reset */
+body, table {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: white;
+}
+
+a:link, a:active, a:visited, a:hover {
+	color: #8BC7FF;
+}
+
+a:link, a:active, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.ikHead a:link, .ikHead a:active, .ikHead a:visited, .ikHead a:hover, 
+.ikFoot a:link, .ikFoot a:active, .ikFoot a:visited, .ikFoot a:hover {
+	color: white;
+}
+
+p {
+	margin: 0px;
+	text-align: justify;
+}
+
+p + p {
+	margin-top: 7px;
+}
+
+table, div, tr, td {
+	padding: 0px;
+	margin: 0px;
+ 	border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+.ikBlock {
+	background-image: url('./images/background2.png');
+	border: 2px solid #0075B2;
+	margin: 3px;
+}
+
+.ikHead, .ikSubhead, .ikBody, .ikFoot {
+	margin: 0px;
+	padding: 3px;
+}
+
+.ikHead {
+	text-align: center;
+	font-size: 115%;
+	font-weight: bold;
+	background-image: url('./images/cellpic3.png');
+	background-color: #8BC7FF;
+	color: #006699;
+}
+
+.ikSubhead, .ikFoot {
+	background-image: url('./images/cellpic1.png');
+	background-color: #006699;
+}
+
+.ikSubhead {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.ikCell {
+	display: table-cell;
+}
+
+.ikRow1 > td, .ikRow2 > td {
+	padding: 0px 3px 0px 3px;
+}
+
+.ikRow1 {
+/* 	background-color: blue; */
+}
+
+.ikRow2 {
+/* 	background-color: darkblue; */
+}
+
+body {
+	text-align: center;
+}
+
+#header, #content, #footer {
+	margin: auto;
+	text-align: left;
+	width: 80%;
+	clear: both;
+}
+
+#logo {
+	float: left;
+	clear: left;
+	border: none;
+	background: none;
+}
+
+#menu {
+	float: right;
+	clear: right;
+	text-align: center;
+}
+
+#footer {
+	text-align: center;
+}
+
+.ikForm div {
+	clear: left;
+	padding: 3px;
+	padding-left: 155px; /*width of left column containing the label elements*/
+}
+
+.ikForm label {
+	font-weight: bold;
+	float: left;
+	margin-left: -155px; /*width of left column*/
+	width: 150px; /*width of labels. Should be smaller than left column to create some right margin*/
+}
+
+.ikForm input[type="text"], .ikForm input[type="password"] { /*width of text boxes. IE6 does not understand this attribute*/
+	width: 180px;
+}
+
+.ikForm textarea {
+	width: 250px;
+	height: 150px;
+}
+
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
+*/
+
+* html .threepxfix {
+	margin-left: 3px;
+}

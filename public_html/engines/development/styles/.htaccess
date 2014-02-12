@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /engines/development/styles
+RewriteCond %{SCRIPT_URL} !^/default/.+$
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^[^/]+/(.+)$ default/$1 [L]

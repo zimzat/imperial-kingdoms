@@ -1,0 +1,420 @@
+/*
+  Original SpacePilot3K Theme for phpBB version 2+
+  Created by Jakob Persson
+  http://www.jakob-persson.com
+  
+  Adapted for Imperial Kingdoms By Zimzat
+  http://www.imperialkingdoms.com/
+*/
+
+
+ /* General page style. The scroll bar colours only visible in IE5.5+ */
+body {
+	scrollbar-face-color: #006699;
+	scrollbar-highlight-color: #2DB6FD;
+	scrollbar-shadow-color: #005886;
+	scrollbar-3dlight-color: #038DD5;
+	scrollbar-arrow-color: #8BC7FF;
+	scrollbar-track-color: #005F90;
+	scrollbar-darkshadow-color: #00466A;
+	color: #FFFFFF;
+	font-size: 12px;
+	border: 0px;
+}
+
+body.index {
+	background-image: url('./images/background2.gif');
+	background-attachment: fixed;
+	background-color: #000000;
+}
+
+body.background {
+	background-image: url('./images/background2.gif');
+	background-attachment: fixed;
+	background-color: #000000;
+}
+
+body.page { background-image: url('./images/background.gif'); }
+
+/* General font families for common tags */
+font,th,td,p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+a:link, a:active, a:visited { color: #8BC7FF; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: #8BC7FF; }
+
+/* The largest text used in the index page title and toptic title etc. */
+.maintitle,h1,h2	{
+	font-weight: bold;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	line-height: 120%;
+	color: #FFFFFF;
+}
+
+/* General text */
+.gen { font-size : 12px; }
+.genmed { font-size : 11px; }
+.gensmall { font-size : 10px; }
+.gentiny { font-size : 9px; }
+.gen, .genmed, .gensmall, .gentiny { color : #FFFFFF; }
+
+a.gen, a.genmed, a.gensmall { color: #8BC7FF; text-decoration: none; }
+a.gen:hover, a.genmed:hover, a.gensmall:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+
+/* titles for the topics: could specify viewed link colour too */
+.topictitle			{
+	font-weight: bold;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+a.topictitle:link   { text-decoration: none; color : #8BC7FF; }
+a.topictitle:visited { text-decoration: none; color : #8BC7FF; }
+a.topictitle:hover	{ text-decoration: underline; color : #FFFFFF; }
+
+
+
+.map_tile {
+	width: 15px;
+	height: 15px;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+.map_tile, .icon { border: 0px; }
+
+.nowrap { white-space: nowrap; }
+
+.al-l { text-align: left; }
+.al-c { text-align: center; }
+.al-r { text-align: right; }
+.al-j { text-align: justify; }
+
+.icon.qa {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.i { font-style: italic; }
+.b { font-weight: bold; }
+.u { font-decoration: underline; }
+
+.red { color: red; }
+
+/* General */
+#menu_main, #menu_navigation, #menu_interface, #pane_main, #pane_info, #pane_cluster, #pane_quadrant, #pane_starsystem, #alert_mail, #alert_forum, #alert_combat {
+	position: absolute;
+	margin: 0px;
+}
+#menu_main, #menu_navigation, #menu_interface, #pane_main, #pane_info, #pane_cluster, #pane_quadrant, #pane_starsystem {
+	visibility: visible;
+}
+#menu_main, #menu_navigation, #menu_interface, #pane_main, #alert_mail, #alert_forum, #alert_combat {
+	border: 0px;
+}
+#alert_mail, #alert_forum, #alert_combat {
+	visibility: hidden;
+}
+
+/*
+	Left and Width attributes have to be set in 
+	the DIV tags as well for compatibility with
+	the JavaScript functions fnExpandCompact and 
+	fnMirrorPanes
+*/
+
+/* Main and Info panes */
+#pane_main {
+	top: 15px;
+	left: 210px;
+	width: 525px;
+	height: 398px;
+}
+#pane_info {
+	top: 15px;
+	left: 15px;
+	width: 180px;
+	height: 285px;
+}
+
+
+/* Maps */
+#pane_cluster, #pane_quadrant, #pane_starsystem {
+	top: 427px;
+	width: 105px;
+	height: 105px;
+}
+#pane_cluster {
+	left: 28px;
+}
+#pane_quadrant {
+	left: 175px;
+}
+#pane_starsystem {
+	left: 292px;
+}
+
+
+/* Menus */
+#menu_main {
+	top: 340px;
+	left: 69px;
+	width: 79px;
+	height: 79px;
+}
+#menu_navigation {
+	top: 312px;
+	left: 56px;
+	width: 105px;
+	height: 21px;
+}
+#menu_interface {
+	top: 437px;
+	left: 145px;
+	width: 21px;
+	height: 84px;
+}
+
+
+/* Alerts */
+#alert_mail, #alert_forum, #alert_combat  {
+	width: 25px;
+	height: 25px;
+}
+#alert_mail {
+	top: 367px;
+	left: 96px;
+}
+#alert_forum {
+	top: 341px;
+	left: 122px;
+}
+#alert_combat {
+	top: 341px;
+	left: 96px;
+}
+
+/*
+#pane_main, #pane_info, #pane_cluster, #pane_quadrant, #pane_starsystem {
+	background-color: transparent;
+}
+*/
+
+div.button a:link, div.button a:active, div.button a:visited {
+	text-decoration: none;
+}
+
+div.button {
+	background-image: url('./images/button.gif');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 2px;
+}
+
+
+
+
+
+hr {
+	height: 0px;
+	border: solid #CCCCCC 0px;
+	border-top-width: 1px;
+}
+
+.mailquote {
+	border: 1px #0075B2 solid;
+	padding: 2px;
+}
+
+
+/* This is the border line & background colour round the entire page */
+.bodyline {
+	border: 1px #0075B2 solid;
+	background-image: url('./images/background.gif');
+}
+
+/* This is the outline round the main forum tables */
+.forumline {
+	background-image: url('./images/background2.gif');
+	border: 2px #0075B2 solid;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.forumline {
+/*	border-collapse: collapse;*/
+	width: 100%;
+}
+
+
+
+/* Table cell colours and backgrounds */
+th, 
+td.header {
+	background-image: url('./images/cellpic3.gif');
+	background-color: #8BC7FF;
+	color: #006699;
+	height: 27px;
+	font-size: 12px;
+}
+
+td.cat, td.catBottom, 
+td.subheader {
+	background-image: url('./images/cellpic1.gif');
+	background-color: #006699;
+	color: #FFFFFF;
+	height: 29px;
+	font-size: 10px;
+}
+
+th, td.cat, td.catBottom, 
+th, td.header, td.subheader {
+	text-align: center;
+	font-weight: bold;
+	border-width: 0px 0px 0px 0px;
+	white-space: nowrap;
+}
+
+td.space {
+	background-image: url('./images/background.gif');
+	background-color: #000000;
+}
+
+td.row1 {
+	padding: 0px;
+	margin: 0px;
+}
+
+td.row2 {
+	background-image: url('./images/background3.gif');
+	padding: 0px;
+	margin: 0px;
+}
+
+td.row3 {
+	background-image: url('./images/background2.gif');
+	padding: 0px;
+	margin: 0px;
+}
+
+.postdetails, 
+.data, td.data {
+	font-size: 10px;
+}
+
+
+
+/* Quote & Code blocks */
+.code {
+	font-family: Courier, 'Courier New', sans-serif;
+	font-size: 11px;
+	color: Lime;
+	border: #DDDDDD;
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px
+}
+
+.quote {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #8BC7FF;
+	line-height: 125%;
+	border: #DDDDDD;
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px
+}
+
+/* IFRAME */
+
+iframe {
+	border-color : #004368 #036A97 #036A97 #004368;
+}
+
+/* Form elements */
+input,textarea, select {
+	font: normal 11px monospace;
+}
+
+input { 
+	text-indent: 2px;
+}
+
+/* The text input fields background colour */
+input.post, textarea.post, select {
+	background-color: #014669;
+	border-color : #005886 #038DD5 #038DD5 #005886;
+	background-image: url('./images/background2.gif');
+	color: #8BC7FF;
+	scrollbar-face-color: #006699;
+	scrollbar-highlight-color: #2DB6FD;
+	scrollbar-shadow-color: #005886;
+	scrollbar-3dlight-color: #038DD5;
+	scrollbar-arrow-color: #8BC7FF;
+	scrollbar-track-color: #005F90;
+	scrollbar-darkshadow-color: #00466A;
+	background-attachment: fixed;
+}
+
+select {
+	border-color : #005886 #038DD5 #038DD5 #005886;	
+}
+
+input.field {
+	background-color: #006699;
+	border-color : #005886 #038DD5 #038DD5 #005886;
+	background-image: url('./images/background2.gif');
+	color: #8BC7FF;
+}
+
+/* The buttons used for bbCode styling in message post */
+input.button {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #006699;
+	color: #8BC7FF;
+	border-color : #038DD5 #005886 #005886 #038DD5;
+}
+
+/* The main submit button option */
+input.mainoption {
+	font-weight: bold;
+	background-color: #006699;
+	color: #8BC7FF;
+	border-color : #038DD5 #005886 #005886 #038DD5;
+}
+
+/* None-bold submit button */
+input.liteoption {
+	font-weight: normal;
+	background-color: #006699;
+	color: #8BC7FF;
+	border-color : #038DD5 #005886 #005886 #038DD5;
+}
+
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url('./formIE.css');

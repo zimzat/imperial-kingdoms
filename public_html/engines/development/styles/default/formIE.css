@@ -1,0 +1,51 @@
+/* Fancy form styles for IE */
+
+/* The scroll bar colours only visible in IE5.5+  */
+
+body
+{
+	scrollbar-face-color: #006699;
+	scrollbar-highlight-color: #2DB6FD;
+	scrollbar-shadow-color: #005886;
+	scrollbar-3dlight-color: #038DD5;
+	scrollbar-arrow-color: #8BC7FF;
+	scrollbar-track-color: #005F90;
+	scrollbar-darkshadow-color: #00466A;
+}
+
+input.post, textarea.post, select
+{
+	scrollbar-face-color: #006699;
+	scrollbar-highlight-color: #2DB6FD;
+	scrollbar-shadow-color: #005886;
+	scrollbar-3dlight-color: #038DD5;
+	scrollbar-arrow-color: #8BC7FF;
+	scrollbar-track-color: #005F90;
+	scrollbar-darkshadow-color: #00466A;
+}
+
+input, textarea, select
+{
+	border-top-width : 1px;
+	border-right-width : 1px;
+	border-bottom-width : 1px;
+	border-left-width : 1px;
+}
+
+input
+{
+	text-indent : 2px;
+}
+
+input.button
+{
+	border-top-width : 1px;
+	border-right-width : 1px;
+	border-bottom-width : 1px;
+	border-left-width : 1px;
+}
+
+.postbody
+{
+	line-height: 18px;
+}
